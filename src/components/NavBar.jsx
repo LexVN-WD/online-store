@@ -1,6 +1,7 @@
 import { FaShoppingCart } from 'react-icons/fa'
 
 import Cart from './Cart'
+import User from './User'
 
 export default function NavBar() {
   return (
@@ -19,8 +20,9 @@ export default function NavBar() {
           <a href='/contact'>Contact</a>
         </li>
       </ul>
-      <div className='w-[20%] bg-slate-500'>
+      <div className='w-[20%] bg-slate-500 flex flex-row'>
         <Cart />
+        <User />
       </div>
     </nav>
   )

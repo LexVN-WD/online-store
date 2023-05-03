@@ -1,5 +1,6 @@
 // Components
 import NavBar from "../components/NavBar"
+import Popular from "../components/Popular"
 
 
 export default function Home() {
@@ -7,8 +8,10 @@ export default function Home() {
    <>
    <div className="h-screen w-screen">
      <NavBar />
-     <main>
-      <h1>Homepage</h1>
+     <main className="h-[90%] w-full">
+      <section className="h-[50%] w-full flex justify-center">
+        <Popular />
+      </section>
      </main>
    </div>
    </>

@@ -8,16 +8,16 @@ export default function PopularProducts({topRated, apparel, accessories, tools})
             <img src="/static/products/apparel1.jpg" alt="Top-Rated 1" className="object-contain h-full"></img>
           </li>
           <li className="flex flex-col justify-center border hover:border-2 border-black h-full w-full">
-            <img src="/static/products/apparel2.jpg" alt="Top-Rated 2" className="object-contain h-full"></img>
+            <img src="/static/products/tools1.jpg" alt="Top-Rated 2" className="object-contain h-full"></img>
           </li>
           <li className="flex flex-col justify-center border hover:border-2 border-black h-full w-full">
-            <img src="/static/products/accessories1.jpg" alt="Top-Rated 3" className="object-contain h-full"></img>
+            <img src="/static/products/apparel2.jpg" alt="Top-Rated 3" className="object-contain h-full"></img>
           </li>
           <li className="flex flex-col justify-center border hover:border-2 border-black h-full w-full">
-            <img src="/static/products/accessories2.jpg" alt="Top-Rated 4" className="object-contain h-full"></img>
+            <img src="/static/products/accessories1.jpg" alt="Top-Rated 4" className="object-contain h-full"></img>
           </li>
           <li className="flex flex-col justify-center border hover:border-2 border-black h-full w-full">
-            <img src="/static/products/tools1.jpg" alt="Top-Rated 5" className="object-contain h-full"></img>
+            <img src="/static/products/accessories2.jpg" alt="Top-Rated 5" className="object-contain h-full"></img>
           </li>
         </ul>
       )}

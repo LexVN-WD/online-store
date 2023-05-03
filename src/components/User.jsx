@@ -3,10 +3,11 @@ import { MdAccountBox } from 'react-icons/md';
 export default function User() {
   return (
     <>
-      <div className="h-full w-[50%] flex flex-row justify-between items-center p-2 hover:border-x border-black hover:bg-white hover:text-black">
-      <div className='h-[50%] w-full p-2 text-center text-2xl'>
-        <button>
-          <MdAccountBox />
+      <div className="group/user h-full w-[50%] flex flex-row justify-between items-center p-2 hover:border-x border-black hover:bg-slate-200 hover:text-black">
+      <div className='h-full w-full p-2'>
+        <button className='flex flex-col h-full w-full space-y-1'>
+          <p className='invisible group-hover/user:visible h-[50%] w-full'>Account</p>
+          <MdAccountBox className='h-[50%] w-full'/>
         </button>
       </div>
     </div>

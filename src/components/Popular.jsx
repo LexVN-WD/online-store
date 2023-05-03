@@ -39,7 +39,7 @@ export default function Popular() {
 
   return (
     <>
-    <div className=" flex flex-col justify-center items-center h-full w-[80%] space-y-2 text-white">
+    <div className=" flex flex-col justify-center items-center h-full w-[80%] space-y-2 text-black">
       <div className=" flex items-center text-2xl font-bold h-[20%] p-1">
         <h2>Popular Items</h2>
       </div>

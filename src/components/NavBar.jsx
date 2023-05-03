@@ -7,16 +7,16 @@ export default function NavBar() {
   return (
     <nav className="flex flex-row h-[10%] w-full">
       <ul className="flex flex-row justify-around items-center h-full w-[80%] text-lg font-semibold bg-slate-400 text-center">
-        <li className="bg-slate-200 p-1 rounded-lg">
+        <li className="hover:bg-slate-200 p-2 rounded-lg hover:border border-black">
           <a href='/'>Home</a>
         </li>
-        <li className="bg-slate-200 p-1 rounded-lg">
+        <li className="hover:bg-slate-200 p-2 rounded-lg hover:border border-black">
           <a href='/categories'>Shop</a>
         </li>
-        <li className="bg-slate-200 p-1 rounded-lg">
+        <li className="hover:bg-slate-200 p-2 rounded-lg hover:border border-black">
           <a href='/about'>About</a>
         </li>
-        <li className="bg-slate-200 p-1 rounded-lg">
+        <li className="hover:bg-slate-200 p-2 rounded-lg hover:border border-black">
           <a href='/contact'>Contact</a>
         </li>
       </ul>

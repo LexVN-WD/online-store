@@ -3,8 +3,10 @@ import NavBar from "../../components/NavBar";
 export default function Categories() {
   return (
     <>
-      <NavBar />
-      <h1>Categories</h1>
+      <div className="h-screen w-screen">
+        <NavBar />
+        <h1>Categories</h1>
+      </div>
     </>
   );
 }

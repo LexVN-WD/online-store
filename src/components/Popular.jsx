@@ -45,25 +45,25 @@ export default function Popular() {
       </div>
       <div className='flex flex-row h-[10%] justify-evenly w-[80%] border-b border-black'>
         <button 
-          className={`${topRated === true ? 'border-b-2 border-black' : 'hover:border-b-2 border-black' } `}
+          className={`w-1/5 ${topRated === true ? 'border-b-2 border-black font-bold' : 'hover:border-b-2 border-black' } `}
           onClick={handleTopRated}
           >
           Top Rated
         </button>
         <button 
-          className={`${apparel === true ? 'border-b-2 border-black' : 'hover:border-b-2 border-black'}`}
+          className={`w-1/5 ${apparel === true ? 'border-b-2 border-black font-bold' : 'hover:border-b-2 border-black'}`}
           onClick={handleApparel}
         >
           Apparel
         </button>
         <button 
-          className={`${accessories === true ? 'border-b-2 border-black' : 'hover:border-b-2 border-black'}`}
+          className={`w-1/5 ${accessories === true ? 'border-b-2 border-black font-bold' : 'hover:border-b-2 border-black'}`}
           onClick={handleAccessories}
           >
           Accessories
         </button>
         <button 
-          className={`${tools === true ? 'border-b-2 border-black' : 'hover:border-b-2 border-black'}`}
+          className={`w-1/5 ${tools === true ? 'border-b-2 border-black font-bold' : 'hover:border-b-2 border-black'}`}
           onClick={handleTools}
           >
           Tools

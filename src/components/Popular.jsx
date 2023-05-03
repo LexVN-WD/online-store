@@ -39,11 +39,11 @@ export default function Popular() {
 
   return (
     <>
-    <div className=" flex flex-col justify-center items-center h-full w-[80%] space-y-2">
+    <div className=" flex flex-col justify-center items-center h-full w-[80%] space-y-2 text-white">
       <div className=" flex items-center text-2xl font-bold h-[20%] p-1">
         <h2>Popular Items</h2>
       </div>
-      <div className='flex flex-row h-[10%] justify-evenly w-[80%] border-b border-black'>
+      <div className='flex flex-row h-[10%] justify-evenly w-[80%] border-b border-black text-xl'>
         <button 
           className={`w-1/5 ${topRated === true ? 'border-b-2 border-black font-bold' : 'hover:border-b-2 border-black' } `}
           onClick={handleTopRated}

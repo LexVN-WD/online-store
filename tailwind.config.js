@@ -16,6 +16,9 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
+    backgroundImage: {
+      'wood': "url('https://www.transparenttextures.com/patterns/purty-wood.png')",
+    },
     colors: {
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
@@ -26,6 +29,8 @@ module.exports = {
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
+      'primary': '#3d9970',
+      'secondary': '#803705',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

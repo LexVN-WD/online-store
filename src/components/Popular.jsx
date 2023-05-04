@@ -103,7 +103,7 @@ export default function Popular() {
           Accessories
         </button>
       </div>
-      <div className="flex flex-row h-[70%] w-full">
+      <div className="flex flex-row h-[80vh] w-[65vw]">
         <PopularProducts topRated={topRated} home={home} apparel={apparel} kitchen={kitchen} accessories={accessories} />
       </div>
     </div>

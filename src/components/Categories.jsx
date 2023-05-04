@@ -12,7 +12,7 @@ const lato = Lato({
 export default function Categories() {
   return (
     <>
-    <div className={`h-[60vh] w-[80vw] flex flex-row ${lato.className}`}>
+    <div className={`h-[60vh] w-[80vw] flex flex-row ${lato.className} shadow-md shadow-black`}>
       <div className="relative flex flex-row h-full w-[35%]">
         <Link href='/categories/homeinterior' className='h-full w-full bg-black'>
             <img src="/static/categories/home-interior.jpeg" className="h-full w-full object-fill hover:opacity-80" alt='homeinterior'></img>

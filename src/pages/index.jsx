@@ -7,18 +7,18 @@ import Categories from "../components/Categories"
 export default function Home() {
   return (
    <>
-   <div className="min-h-screen min-w-screen flex flex-col justify-center items-center bg-white">
-     <div className="bg-white w-full">
+   <div className="min-h-screen min-w-screen flex flex-col justify-center items-center bg-[#3d9970]/20 bg-wood">
+     <div className="w-full">
        <NavBar />
      </div>
      <main className="h-full w-full flex flex-col items-center">
       {/* <section className="pt-[15vh]">
         <Slideshow />
       </section> */}
-      <section className="pt-[12vh]">
+      <section className="py-[5vh]">
         <Categories />
       </section>
-      <section className="h-full w-full flex justify-center pt-[10vh]">
+      <section className="h-full w-full flex justify-center py-[5vh]">
         <Popular />
       </section>
      </main>

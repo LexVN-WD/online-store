@@ -18,7 +18,7 @@ export default function Home() {
       <section className="pt-[12vh]">
         <Categories />
       </section>
-      <section className="h-[40vh] w-full flex justify-center">
+      <section className="h-full w-full flex justify-center pt-[10vh]">
         <Popular />
       </section>
      </main>

@@ -18,37 +18,51 @@ const gugi = Gugi({
 
 export default function Popular() {
   const [topRated, setTopRated] = useState(true);
+  const [home, setHome] = useState(false);
   const [apparel, setApparel] = useState(false);
+  const [kitchen, setKitchen] = useState(false);
   const [accessories, setAccessories] = useState(false);
-  const [tools, setTools] = useState(false);
   
   const handleTopRated = () => {
     setTopRated(true);
+    setHome(false);
     setApparel(false);
+    setKitchen(false);
     setAccessories(false);
-    setTools(false);
+  };
+
+   const handleHome = () => {
+    setTopRated(false);
+    setHome(true);
+    setApparel(false);
+    setKitchen(false);
+    setAccessories(false);
   };
 
   const handleApparel = () => {
     setTopRated(false);
+    setHome(false);
     setApparel(true);
+    setKitchen(false);
     setAccessories(false);
-    setTools(false);
+  };
+
+  const handleKitchen = () => {
+    setTopRated(false);
+    setHome(false);
+    setApparel(false);
+    setKitchen(true);
+    setAccessories(false);
   };
 
   const handleAccessories = () => {
     setTopRated(false);
+    setHome(false);
     setApparel(false);
+    setKitchen(false);
     setAccessories(true);
-    setTools(false);
   };
 
-  const handleTools = () => {
-    setTopRated(false);
-    setApparel(false);
-    setAccessories(false);
-    setTools(true);
-  };
 
 
   return (
@@ -65,10 +79,22 @@ export default function Popular() {
           Top Rated
         </button>
         <button 
+          className={`w-1/5 ${home === true ? 'border-b-2 border-black font-bold' : 'hover:border-b-2 border-black'}`}
+          onClick={handleHome}
+        >
+          Home Interior
+        </button>
+        <button 
           className={`w-1/5 ${apparel === true ? 'border-b-2 border-black font-bold' : 'hover:border-b-2 border-black'}`}
           onClick={handleApparel}
         >
           Apparel
+        </button>
+        <button 
+          className={`w-1/5 ${kitchen === true ? 'border-b-2 border-black font-bold' : 'hover:border-b-2 border-black'}`}
+          onClick={handleKitchen}
+          >
+          Kitchen
         </button>
         <button 
           className={`w-1/5 ${accessories === true ? 'border-b-2 border-black font-bold' : 'hover:border-b-2 border-black'}`}
@@ -76,15 +102,9 @@ export default function Popular() {
           >
           Accessories
         </button>
-        <button 
-          className={`w-1/5 ${tools === true ? 'border-b-2 border-black font-bold' : 'hover:border-b-2 border-black'}`}
-          onClick={handleTools}
-          >
-          Tools
-        </button>
       </div>
       <div className="flex flex-row h-[70%] w-full">
-        <PopularProducts topRated={topRated} apparel={apparel} accessories={accessories} tools={tools} />
+        <PopularProducts topRated={topRated} home={home} apparel={apparel} kitchen={kitchen} accessories={accessories} />
       </div>
     </div>
     </>

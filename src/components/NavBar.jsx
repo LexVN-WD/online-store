@@ -27,7 +27,7 @@ export default function NavBar() {
         <div className='h-full w-[50vw]'>
           <div className='h-full w-full px-4 py-4'>
             <Link href="/">
-              <img src='/static/logo.png' className='h-[8vh] mb-0.5 pb-1'></img>
+              <img src='/static/logo.png' className='h-[8vh] mb-0.5 pb-1' alt='logo'></img>
             </Link>
           </div>
         </div>
@@ -36,10 +36,10 @@ export default function NavBar() {
           {/* Nav Links */}
           <ul className="flex flex-row justify-evenly items-center h-[8vh] w-[35vw] text-xl text-center z-20">
             <li className="hover:bg-slate-200 hover:text-black hover:border-b-2 border-black">
-              <a href='/categories'>Categories</a>
+              <Link href='/categories'>Categories</Link>
             </li>
             <li className="hover:bg-slate-200 hover:text-black hover:border-b-2 border-black">
-              <a href='/faqs'>FAQs</a>
+              <Link href='/faqs'>FAQs</Link>
             </li>
           </ul>
           {/* User and Cart */}

@@ -6,8 +6,8 @@ import Slideshow from "../components/Slideshow"
 export default function Home() {
   return (
    <>
-   <div className="min-h-screen min-w-screen max-w-screen bg-gray-100">
-     <div className="h-[8vh] w-full bg-gray-200">
+   <div className="min-h-screen min-w-screen max-w-screen bg-gray-200">
+     <div className="h-[8vh] w-full bg-gray-300">
        <NavBar />
      </div>
      <main className="h-full w-full flex flex-col items-center">

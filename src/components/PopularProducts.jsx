@@ -5,30 +5,30 @@ export default function PopularProducts({topRated, home, apparel, kitchen, acces
         <div className="h-full w-full flex flex-col justify-around py-[5%]">
           <ul className="flex flex-row h-[40%] w-full justify-around items-center space-x-2 text-center p-1">
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/apparel1.jpg" alt="Top-Rated 1" className="object-fill h-full"></img>
+              <img src="/static/products/home/home3.jpg" alt="Top-Rated 3" className="object-fill h-full w-full"></img>
             </li>
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/tools1.jpg" alt="Top-Rated 2" className="object-fill h-full"></img>
+              <img src="/static/products/apparel/app2.jpg" alt="Top-Rated 2" className="object-fill h-full w-full"></img>
             </li>
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/apparel2.jpg" alt="Top-Rated 3" className="object-fill h-full"></img>
+              <img src="/static/products/home/home8.jpg" alt="Top-Rated 4" className="object-fill h-full w-full"></img>
             </li>
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/accessories1.jpg" alt="Top-Rated 4" className="object-fill h-full"></img>
+              <img src="/static/products/kitchen/kitchen2.jpg" alt="Top-Rated 2" className="object-fill h-full w-full"></img>
             </li>
           </ul>
           <ul className="flex flex-row h-[40%] w-full justify-around items-center space-x-2 text-center p-1">
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/apparel1.jpg" alt="Top-Rated 1" className="object-fill h-full w-full"></img>
+              <img src="/static/products/home/home1.jpg" alt="Top-Rated 1" className="object-fill h-full w-full"></img>
             </li>
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/tools1.jpg" alt="Top-Rated 2" className="object-fill h-full w-full"></img>
+              <img src="/static/products/home/home6.jpg" alt="Top-Rated 2" className="object-fill h-full w-full"></img>
             </li>
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/apparel2.jpg" alt="Top-Rated 3" className="object-fill h-full w-full"></img>
+              <img src="/static/products/kitchen/kitchen4.jpg" alt="Top-Rated 4" className="object-fill h-full w-full"></img>
             </li>
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/accessories1.jpg" alt="Top-Rated 4" className="object-fill h-full w-full"></img>
+              <img src="/static/products/apparel/app8.jpg" alt="Top-Rated 4" className="object-fill h-full w-full"></img>
             </li>
           </ul>
         </div>

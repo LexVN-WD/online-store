@@ -3,7 +3,7 @@ import { Carousel } from "flowbite-react"
 export default function Slideshow() {
   return(
     <>
-    <section className="h-full w-full pt-2">
+    <section className="h-[70vh] w-[70vw] pt-2">
       <div className="h-full w-full">
         <Carousel slideInterval={3000} className="bg-gray-400 w-full h-full rounded-lg border-2 border-black shadow-md shadow-black">
           <div className='flex flex-row justify-evenly items-center h-full w-full'>

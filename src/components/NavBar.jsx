@@ -1,39 +1,49 @@
-import { MdStore } from 'react-icons/md'
 import Cart from './Cart'
 import User from './User'
+
+import { Lato, Gugi } from 'next/font/google'
+
+const lato = Lato({
+  weight: ['400'],
+  styles: ['normal'],
+  subsets: ['latin'],
+})
+
+const gugi = Gugi({
+  weight: ['400'],
+  styles: ['normal'],
+  subsets: ['latin'],
+})
+
 
 
 export default function NavBar() {
   return (
     <>
-      <nav className="flex flex-row h-full justify-evenly w-full text-black border-b border-black">
-        <div className='flex flex-row justify-center items-center h-[8vh] w-[10vw] absolute top-0 left-0'>
-          <MdStore className='h-full w-[35%] pl-2'/>
-          <div className='flex flex-col justify-center items-center text-md text-center font-bold p-3'>
-            <p className='w-full h-full'>LexVN</p>
-            <p className='w-full h-full'>Online-Store</p>
+      <nav className={`flex flex-row justify-around items-center h-[10vh] w-full px-[10%] text-black z-20 bg-white fixed top-0 border-b-2 border-black/30 ${gugi.className}`}>
+        {/* Logo container */}
+        <div className='h-full w-[50vw]'>
+          <div className='h-full w-full px-4 py-4'>
+            <a href="/"><img src='/static/logo.png' className='h-[8vh] mb-0.5 pb-1'></img></a>
           </div>
         </div>
-        <div className='flex flex-row h-full w-[90vw]'>
-          <ul className="flex flex-row justify-evenly items-center h-[8vh] w-[50vw] text-xl font-semibold text-center absolute top-0 left-[25%] z-20">
-            <li className="hover:bg-slate-200 hover:text-black pb-1 hover:border-b-2 border-black">
-              <a href='/'>Home</a>
+        {/* Nav links container */}
+        <div className='flex flex-row h-[8vh] w-[35vw]'>
+          {/* Nav Links */}
+          <ul className="flex flex-row justify-evenly items-center h-[8vh] w-[35vw] text-xl font-semibold text-center z-20">
+            <li className="hover:bg-slate-200 hover:text-black hover:border-b-2 border-black">
+              <a href='/categories'>Categories</a>
             </li>
-            <li className="hover:bg-slate-200 hover:text-black pb-1 hover:border-b-2 border-black">
-              <a href='/categories'>Shop</a>
-            </li>
-            <li className="hover:bg-slate-200 hover:text-black pb-1 hover:border-b-2 border-black">
-              <a href='/about'>About</a>
-            </li>
-            <li className="hover:bg-slate-200 hover:text-black pb-1 hover:border-b-2 border-black">
-              <a href='/contact'>Contact</a>
+            <li className="hover:bg-slate-200 hover:text-black hover:border-b-2 border-black">
+              <a href='/faqs'>FAQs</a>
             </li>
           </ul>
-          <div className='w-[5vw] h-[8vh] flex flex-row absolute top-0 right-0'>
+          {/* User and Cart */}
+          <div className='w-[5vw] h-[8vh] flex flex-row'>
             <User />
             <Cart />
           </div>
-        </div>
+        </div> 
       </nav>
     </>
   )

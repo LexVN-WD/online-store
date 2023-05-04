@@ -1,6 +1,20 @@
 import { useState } from 'react'
 import PopularProducts from './PopularProducts';
 
+import { Lato, Gugi } from 'next/font/google'
+
+const lato = Lato({
+  weight: ['400'],
+  styles: ['normal'],
+  subsets: ['latin'],
+})
+
+const gugi = Gugi({
+  weight: ['400'],
+  styles: ['normal'],
+  subsets: ['latin'],
+})
+
 
 export default function Popular() {
   const [topRated, setTopRated] = useState(true);
@@ -40,10 +54,10 @@ export default function Popular() {
   return (
     <>
     <div className=" flex flex-col justify-center items-center h-full w-[80%] space-y-2 text-black">
-      <div className=" flex items-center text-2xl font-bold h-[20%] p-1">
+      <div className={`flex items-center text-2xl font-bold h-[20%] p-1 ${gugi.className}`}>
         <h2>Popular Items</h2>
       </div>
-      <div className='flex flex-row h-[10%] justify-evenly w-[80%] border-b border-black text-xl'>
+      <div className={`flex flex-row h-[10%] justify-evenly w-[80%] border-b border-black text-xl ${lato.className}`}>
         <button 
           className={`w-1/5 ${topRated === true ? 'border-b-2 border-black font-bold' : 'hover:border-b-2 border-black' } `}
           onClick={handleTopRated}

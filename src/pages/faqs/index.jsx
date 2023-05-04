@@ -1,11 +1,11 @@
 import NavBar from "../../components/NavBar";
 
-export default function About() {
+export default function Faqs() {
   return (
     <>
       <div className="h-screen w-screen">
         <NavBar />
-        <h1>About</h1>
+        <h1>Faqs</h1>
       </div>
     </>
   );

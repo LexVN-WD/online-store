@@ -1,4 +1,3 @@
-
 export default function PopularProducts({topRated, apparel, accessories, tools}) {
   return (
     <div className="h-full w-full">

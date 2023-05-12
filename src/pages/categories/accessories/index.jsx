@@ -1,6 +1,6 @@
 import NavBar from "../../../components/NavBar";
 
-export default function Accessories() {
+export default function AccessoriesPage() {
   return (
     <>
       <div className="h-screen w-screen">

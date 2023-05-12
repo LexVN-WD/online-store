@@ -1,6 +1,6 @@
 import NavBar from "../../../components/NavBar";
 
-export default function Kitchen() {
+export default function KitchenPage() {
   return (
     <>
       <div className="h-screen w-screen">

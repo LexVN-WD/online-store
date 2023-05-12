@@ -1,6 +1,6 @@
 import NavBar from "../../../components/NavBar";
 
-export default function HomeInterior() {
+export default function HomeInteriorPage() {
   return (
     <>
       <div className="h-screen w-screen">

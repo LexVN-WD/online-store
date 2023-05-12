@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import Cart from './Cart'
 import User from './User'
+import logo from '../../public/static/logo.png'
 
 import { Lato, Gugi } from 'next/font/google'
 
@@ -23,19 +24,19 @@ const gugi = Gugi({
 export default function NavBar() {
   return (
     <>
-      <nav className={`flex flex-row justify-around items-center h-[10vh] w-full px-[10%] text-black z-20 border-b-2 border-black/30 shadow-md shadow-black bg-gray-100 ${gugi.className}`}>
+      <nav className={`flex flex-row justify-between items-center h-[10vh] w-full px-[10%] text-black z-20 border-b-2 border-black/30 shadow-md shadow-black bg-gray-100 ${lato.className}`}>
         {/* Logo container */}
-        <div className='h-full w-[50vw]'>
+        <div className='h-full w-[15vw]'>
           <div className='h-full w-full px-4 py-4'>
             <Link href="/">
-              <Image src='/static/logo.png' width={'100%'} height={'8vh'}  className='h-[8vh] mb-0.5 pb-1' alt='logo'></Image>
+              <Image src={logo} className='h-[8vh] mb-0.5 pb-1 object-contain' alt='logo'></Image>
             </Link>
           </div>
         </div>
         {/* Nav links container */}
         <div className='flex flex-row h-[8vh] w-[35vw]'>
           {/* Nav Links */}
-          <ul className="flex flex-row justify-evenly items-center h-[8vh] w-[35vw] text-xl text-center z-20">
+          <ul className="flex flex-row justify-evenly items-center h-[8vh] w-[35vw] text-2xl font-bold text-center z-20">
             <li className="hover:bg-slate-200 hover:text-black hover:border-b-2 border-black">
               <Link href='/categories'>Categories</Link>
             </li>

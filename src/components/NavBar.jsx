@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { useState, useRef } from 'react'
 
 import Cart from './Cart'
 import User from './User'
+import CategoriesDropDown from './CategoriesDropDown'
 import logo from '../../public/static/logo.png'
 
 import { Lato, Gugi } from 'next/font/google'
@@ -38,7 +40,9 @@ export default function NavBar() {
           {/* Nav Links */}
           <ul className="flex flex-row justify-evenly items-center h-[8vh] w-[35vw] text-2xl font-bold text-center z-20">
             <li className="hover:bg-slate-200 hover:text-black hover:border-b-2 border-black">
-              <Link href='/categories'>Categories</Link>
+              <div className='relative inline-block'>
+                <div>Categories</div>
+              </div>
             </li>
             <li className="hover:bg-slate-200 hover:text-black hover:border-b-2 border-black">
               <Link href='/faqs'>FAQs</Link>

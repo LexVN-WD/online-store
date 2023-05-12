@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import Cart from './Cart'
 import User from './User'
@@ -27,7 +28,7 @@ export default function NavBar() {
         <div className='h-full w-[50vw]'>
           <div className='h-full w-full px-4 py-4'>
             <Link href="/">
-              <img src='/static/logo.png' className='h-[8vh] mb-0.5 pb-1' alt='logo'></img>
+              <Image src='/static/logo.png' width={'100%'} height={'8vh'}  className='h-[8vh] mb-0.5 pb-1' alt='logo'></Image>
             </Link>
           </div>
         </div>

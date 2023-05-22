@@ -135,38 +135,32 @@ export default function PopularProducts({topRated, home, apparel, kitchen, acces
 
       {accessories === true && (
         <div className="h-full w-full flex flex-col justify-around py-[5%]">
-          <ul className="flex flex-row h-full w-full justify-around items-center space-x-4 text-center p-1">
+          <ul className="flex flex-row h-[40%] w-full justify-around items-center space-x-2 text-center p-1">
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/accessories1.jpg" alt="Accessories 1" className="object-fill h-full"></img>
+              <img src="/static/products/accessories1.jpg" alt="Accessories 1" className="object-fill h-full w-full"></img>
             </li>
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/accessories2.jpg" alt="Accessories 2" className="object-fill h-full"></img>
+              <img src="/static/products/accessories2.jpg" alt="Accessories 2" className="object-fill h-full w-full"></img>
             </li>
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/accessories3.jpg" alt="Accessories 3" className="object-fill h-full"></img>
+              <img src="/static/products/accessories3.jpg" alt="Accessories 3" className="object-fill h-full w-full"></img>
             </li>
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/accessories4.jpg" alt="Accessories 4" className="object-fill h-full"></img>
-            </li>
-            <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/accessories5.jpg" alt="Accessories 5" className="object-fill h-full"></img>
+              <img src="/static/products/accessories4.jpg" alt="Accessories 4" className="object-fill h-full w-full"></img>
             </li>
           </ul>
-          <ul className="flex flex-row h-full w-full justify-around items-center space-x-4 text-center p-1">
+          <ul className="flex flex-row h-[40%] w-full justify-around items-center space-x-2 text-center p-1">
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/accessories1.jpg" alt="Accessories 1" className="object-fill h-full"></img>
+              <img src="/static/products/accessories1.jpg" alt="Accessories 1" className="object-fill h-full w-full"></img>
             </li>
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/accessories2.jpg" alt="Accessories 2" className="object-fill h-full"></img>
+              <img src="/static/products/accessories2.jpg" alt="Accessories 2" className="object-fill h-full w-full"></img>
             </li>
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/accessories3.jpg" alt="Accessories 3" className="object-fill h-full"></img>
+              <img src="/static/products/accessories3.jpg" alt="Accessories 3" className="object-fill h-full w-full"></img>
             </li>
             <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/accessories4.jpg" alt="Accessories 4" className="object-fill h-full"></img>
-            </li>
-            <li className="flex flex-col justify-center  hover:shadow-lg shadow-black h-full w-1/4 px-4">
-              <img src="/static/products/accessories5.jpg" alt="Accessories 5" className="object-fill h-full"></img>
+              <img src="/static/products/accessories4.jpg" alt="Accessories 4" className="object-fill h-full w-full"></img>
             </li>
           </ul>
         </div>

@@ -24,6 +24,13 @@ const gugi = Gugi({
 
 
 export default function NavBar() {
+
+  const [showDropDown, setShowDropDown] = useState(false)
+
+  const dropDownHandler = () => {
+    setShowDropDown(!showDropDown)
+  } 
+
   return (
     <>
       <nav className={`flex flex-row justify-between items-center h-[10vh] w-full px-[10%] text-black z-20 border-b-2 border-black/30 shadow-md shadow-black bg-gray-100 ${lato.className}`}>
@@ -41,7 +48,7 @@ export default function NavBar() {
           <ul className="flex flex-row justify-evenly items-center h-[8vh] w-[35vw] text-2xl font-bold text-center z-20">
             <li className="hover:bg-slate-200 hover:text-black hover:border-b-2 border-black">
               <div className='relative inline-block'>
-                <div>Categories</div>
+                <button onClick={dropDownHandler} >Categories</button>
               </div>
             </li>
             <li className="hover:bg-slate-200 hover:text-black hover:border-b-2 border-black">
@@ -55,6 +62,7 @@ export default function NavBar() {
           </div>
         </div> 
       </nav>
+      {showDropDown && <CategoriesDropDown />}
     </>
   )
 }

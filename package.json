@@ -6,13 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate:postgres": "dotenv -e .env.local -- npx prisma migrate deploy"
   },
   "dependencies": {
+    "@prisma/client": "^4.14.1",
     "@react-three/drei": "^9.66.1",
     "@react-three/fiber": "^8.13.0",
     "@vercel/postgres": "^0.3.0",
     "autoprefixer": "^10.4.14",
+    "dotenv-cli": "^7.2.1",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
     "flowbite": "^1.6.5",

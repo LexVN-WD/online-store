@@ -1,6 +1,15 @@
 import Filter from "./Filter"
+import prisma from "../../lib/prisma"
+import { useEffect } from "react"
+
+const products = await prisma.products.findMany({
+  where: {
+    category: "Home Interior"
+  }
+})
 
 export default function ProductList() {
+
   return (
     <>
     <section className="h-full w-full bg-black/20">
@@ -8,7 +17,9 @@ export default function ProductList() {
         <div className="h-full w-[20%] bg-black/30">
           <Filter />
         </div>
-        <div></div>
+        <div>
+          
+        </div>
       </div>
     </section>
     </>

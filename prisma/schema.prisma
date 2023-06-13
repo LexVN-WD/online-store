@@ -18,8 +18,8 @@ model categories {
 model products {
   id          Int        @id @default(autoincrement())
   name        String     @unique @db.VarChar(255)
-  description String     @db.VarChar(255)
-  price       Decimal    @db.Decimal(10, 2)
+  description String     @db.Text
+  price       Decimal    @db.Money
   categoryId  Int
   category    categories @relation(fields: [categoryId], references: [id])
 }
